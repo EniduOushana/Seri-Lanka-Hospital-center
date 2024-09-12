@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/contactus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/main-logo.png"/>
+    <link rel="manifest" href="./manifest.json">
+    <title>Seri Lanka - Contact</title>
+</head>
+<body>
+    <header id="header">
+        <section id="logo">
+            <a href="index.html"><img id="logo_image" src="./images/main logo.png" alt="logo image"></a>
+
+        </section>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html" >About us</a>
+            <a href="./services.html">Services</a>
+            <a href="./doctors.html">Doctors</a>
+            <a href="./consultingreservations.html">Consultating Reservations</a>
+            <a href="./pharmacy.html">Pharmacy</a>
+            <a href="./contactus.html" class="active">Contact Us</a>
+        </nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header><br>
+    <h1 class="main-text">Contact Us</h1>
+    <main>
+        <section class="contact-section">
+            <h2>We'd Love to Hear From You:</h2>
+            
+            <!-- Newly added paragraphs -->
+            <p>At Seri Lanka Health Care Hospital, we prioritize your well-being and are committed to providing exceptional care. Our dedicated team is here to answer any questions or concerns you may have. Whether you need information about our services or have specific inquiries, we're here to help.</p>
+            
+            <p>For any urgent issues, please don't hesitate to contact us directly via phone or email. Our team is available during business hours to assist you promptly. Your feedback is valuable to us, and we strive to continuously improve our services based on your suggestions.</p>
+    
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Your Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+    
+                <button type="submit">Send Message</button>
+            </form>
+    
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@serilankahospitalcare.com</p>
+                <p><strong>Address:</strong> 123 Hospital Road, Kandy, 2000</p>
+                <p><strong>Working Hours:</strong> Mon - Fri, 9 AM - 5 PM</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="./consultingreservations.html">Consultion Reservations</a></li>
+                    <li><a href="./pharmacy.html">Phatmacy</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <address>
+                    123 Health Avenue,<br>
+                    Colombo, Sri Lanka<br>
+                    Phone: <a href="tel:+94112223344">+94 11 222 3344</a><br>
+                    Email: <a href="mailto:info@serilankahospitalcare.com">info@serilankahospitalcare.com</a>
+                </address>
+            </div>
+    
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="./images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="./images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Seri Lanka Hospital Care. All rights reserved.</p>
+        </div>
+    </footer>
+            <script>
+                document.querySelector('.hamburger').addEventListener('click', function() {
+                    document.querySelector('.navbar').classList.toggle('active');
+                });
+            </script>
+</body>
+</html>

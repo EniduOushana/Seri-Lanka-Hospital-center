@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/consultingreservations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/main-logo.png"/>
+    <link rel="manifest" href="./manifest.json">
+    <title>Seri Lanka - Reservation</title>
+</head>
+<body>
+    <header id="header">
+        <section id="logo">
+            <a href="index.html"><img id="logo_image" src="./images/main logo.png" alt="logo image"></a>
+
+        </section>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html" >About us</a>
+            <a href="./services.html">Services</a>
+            <a href="./doctors.html">Doctors</a>
+            <a href="./consultingreservations.html" class="active">Consultating Reservations</a>
+            <a href="./pharmacy.html">Pharmacy</a>
+            <a href="./contactus.html">Contact Us</a>
+        </nav>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header><br>
+    <h1 class="main-text">Consultation Reservations</h1>
+    <div class="container">
+        <h1>Consulting Reservation</h1>
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="patientName">Full Name</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="patientEmail">Email</label>
+                <input type="email" id="patientEmail" name="patientEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="patientPhone">Phone Number</label>
+                <input type="tel" id="patientPhone" name="patientPhone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="doctorSelect">Select Doctor</label>
+                <select id="doctorSelect" name="doctorSelect" required>
+                    <option value="">--Choose a Doctor--</option>
+                    <option value="dr_smith">Dr. John Smith - Cardiologist</option>
+                    <option value="dr_jones">Dr. Mary Jones - Neurologist</option>
+                    <option value="dr_williams">Dr. Sarah Williams - Pediatrician</option>
+                    <option value="dr_brown">Dr. James Brown - Orthopedist</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="consultDate">Preferred Consultation Date</label>
+                <input type="date" id="consultDate" name="consultDate" required>
+            </div>
+            <div class="form-group">
+                <label for="consultTime">Preferred Time</label>
+                <input type="time" id="consultTime" name="consultTime" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" placeholder="Enter any additional information" rows="4"></textarea>
+            </div>
+            <button type="submit">Reserve Consultation</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="./consultingreservations.html">Consultion Reservations</a></li>
+                    <li><a href="./pharmacy.html">Phatmacy</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <address>
+                    123 Health Avenue,<br>
+                    Colombo, Sri Lanka<br>
+                    Phone: <a href="tel:+94112223344">+94 11 222 3344</a><br>
+                    Email: <a href="mailto:info@serilankahospitalcare.com">info@serilankahospitalcare.com</a>
+                </address>
+            </div>
+    
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="./images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="./images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Seri Lanka Hospital Care. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
