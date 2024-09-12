@@ -1,0 +1,41 @@
+{
+    "name": "Seri Lanka Health Care Hospital",
+    "short_name": "Seri Lanka Hospital",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "black",
+    "icons": [
+        {
+            "src": "images/192 X 192.png",
+            "sizes": "192x192",
+            "type": "image/png" 
+        },
+        {
+            "src": "images/512 X 512.png",
+            "sizes": "512x512",
+            "type": "image/png" 
+        },
+        {
+            "src": "images/144 X 144.png",
+            "sizes": "144x144",
+            "type": "image/png" 
+        }
+    ],
+    "screenshots":[
+        {
+            "src": "./images/desktop.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "narrow"
+
+        },
+        {
+            "src": "./images/mobile.png",
+            "sizes": "375x667",
+            "type": "image/png",
+            "form_factor": "narrow"
+
+        }
+    ]
+}
